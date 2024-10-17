@@ -29,15 +29,15 @@ const b = "abc";
 // 0x3151       | {a:10, b:true}
 // 0x7213       |
 
-const objectA = { a: 10, b: true };
+// const objectCars = { Tesla: "B50", Toyota: "Prius" };
 
-const copyOfA = objectA;
+// const copyOfCars = objectCars;
 
 //* Доступ до даного об'єкта можливо через метод "."
-copyOfA.a = 20;
+// copyOfCars.Tesla = "B70";
 
 // Додавати нові властивості можливо у такий спосіб
-copyOfA.c = "abc";
-console.log(objectA);
+// copyOfCars.Bentley = "Continental";
+// console.log(objectCars);
 
 //! Якщо працюємо з консолею браузера, потрібно завжди очищати її за допомогою комбінації клавіш (Ctrl + R), або закривати її і повторно відкривати. Тому що за допомогою значка у браузері, очищається лише дана консоль. Тобто при викориристані однакових імен зміних, браузер видасть помилку,через те що консоль зберігає діючу сесію.
