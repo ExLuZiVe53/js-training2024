@@ -81,13 +81,38 @@ const myCity4 = {
   city: "Miami",
 };
 
-// Спочатку вклазуємо назву об'єкта, потім в квадратних дужках у вигляді стрічки вказуємо назву властивості та після дорівнює присвоюємо йому значення
+// Спочатку вказуємо назву об'єкта, потім в квадратних дужках у вигляді стрічки вказуємо назву властивості та після дорівнює - присвоюємо йому значення
 //* Дужковий запис або (bracket notation)
-myCity4["popular"] = true;
-console.log(myCity4);
+// myCity4["popular"] = true;
+// console.log(myCity4);
 
 // Це пишеться в тому випадку, коли ми використовуємо будь-який вираз JS
 
-const countryPropertyName = "country";
-myCity4[countryPropertyName] = "USA";
-console.log(myCity4);
+// const countryPropertyName = "country";
+// myCity4[countryPropertyName] = "USA";
+// console.log(myCity4);
+
+//* Вкладені властивості об'єкта
+
+// const myCity5 = {
+//   city: "Las Vegas",
+//   info: {
+//     isPopular: true,
+//     country: "USA",
+//   },
+// };
+// console.log(myCity5.info.isPopular);
+
+// delete myCity5.info["isPopular"];
+// console.log(myCity5);
+
+//* Використання змінних при створені об'єкта
+
+const name = "Yurii";
+const postsQty = 26;
+
+const userProfile = {
+  name: name,
+  postsQty: postsQty,
+  hasSigmentAgriment: false,
+};
