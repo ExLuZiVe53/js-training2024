@@ -77,9 +77,9 @@
 
 //* Доступ до значення властивості за допомогою квадратних дужок
 
-const myCity4 = {
-  city: "Miami",
-};
+// const myCity4 = {
+//   city: "Miami",
+// };
 
 // Спочатку вказуємо назву об'єкта, потім в квадратних дужках у вигляді стрічки вказуємо назву властивості та після дорівнює - присвоюємо йому значення
 //* Дужковий запис або (bracket notation)
@@ -108,11 +108,22 @@ const myCity4 = {
 
 //* Використання змінних при створені об'єкта
 
-const name = "Yurii";
-const postsQty = 26;
+// const name = "Yurii";
+// const postsQty = 26;
 
-const userProfile = {
-  name: name,
-  postsQty: postsQty,
-  hasSigmentAgriment: false,
-};
+// const userProfile = {
+//   name: name,
+//   postsQty: postsQty,
+//   hasSignedAgreement: false,
+// };
+// console.log(userProfile);
+
+//* Можна записати скорочений запис, якщо ім'я зміної збігається з іменем властивості
+
+// const userProfile1 = {
+//   name,
+//   postsQty,
+//   hasSignedAgreement: false,
+// };
+// console.log(userProfile1);
+// Скорочені властивості об'єкта рекомендується ставити з почату об'єкта
