@@ -67,19 +67,21 @@
 // console.log(person6.name);
 // console.log(person5.name);
 
-//! Varian3
-const person7 = {
-  name: "Got",
-  age: 40,
-};
+//! Variant 3
+// const person7 = {
+//   name: "Got",
+//   age: 40,
+// };
 
 // Із-за подвійної конвертації (JSON.stringify - об'єкт в строку, та JSON.parse()- строку в об'єкт) посилання на вкладені об'єкти не зберігаються
-const person8 = JSON.parse(JSON.stringify(person7));
+
+// const person8 = JSON.parse(JSON.stringify(person7));
+
 // 1 Виконуємо дію в дужках JSON.stringify(person7);
 // 2 Підставляємо у метод JSON.parse(JSON.stringify(person7)) -як аргумент метода parse
 // 3 Присвоюємо результат зміній person8
 
-person8.name = "Lena";
+// person8.name = "Lena";
 
-console.log(person8.name);
-console.log(person7.name);
+// console.log(person8.name);
+// console.log(person7.name);
