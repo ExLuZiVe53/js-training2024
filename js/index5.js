@@ -2,6 +2,7 @@
 //* Значення примітивних типів
 
 // const a = 10;
+
 //* Копіювання значення(copy by value);
 // let b = a;
 // b = 30;
@@ -16,6 +17,7 @@
 // };
 
 //* Мутація об'єкта на який посилається зміна (person)
+
 // person.age = 22;
 // person.isAdult = true;
 
@@ -25,13 +27,15 @@
 //* Мутація копій
 
 // const person1 = {
-//   name: "Vasyl",
+//   name: "King",
 //   age: 30,
 // };
 
-//Копіювання по посиланню(copy by reference)
+//*Копіювання по посиланню(copy by reference)
+
 // const person2 = person1;
-// Мутація об'єкта на який посилається об'єкт (person2)
+//* Мутація об'єкта на який посилається об'єкт (person2)
+
 // person2.age = 35;
 // person2.isNormal = true;
 
@@ -55,11 +59,12 @@
 
 //! Variant 2
 // const person5 = {
-//   name: "Basya",
+//   name: "Cat",
 //   age: 33,
 // };
 
-//* "..." - spred - оператор розділення об'єкта на властивості
+//* "..." - spread - оператор розділення об'єкта на властивості
+
 // const person6 = { ...person5 };
 // Посилання на вкладені об'єкти також зберігаються
 // person6.name = "Lena";
@@ -79,7 +84,7 @@
 
 // 1 Виконуємо дію в дужках JSON.stringify(person7);
 // 2 Підставляємо у метод JSON.parse(JSON.stringify(person7)) -як аргумент метода parse
-// 3 Присвоюємо результат зміній person8
+// 3 Присвоюємо результат змінній person8
 
 // person8.name = "Lena";
 
