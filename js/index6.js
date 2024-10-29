@@ -120,3 +120,28 @@
 // const updatePersonTwo = increasePersonAge(personTwo);
 // console.log(personTwo.age); // 30
 // console.log(updatePersonTwo.age); //31
+
+//! Callback функція
+// Callback функція - це функція яка передається як аргумент в іншу функцію
+
+// function anotherFunction() {
+//   // Дії
+// }
+
+// function fnWithCallback(callBackFunction) {
+//   callBackFunction();
+// }
+// fnWithCallback(anotherFunction);
+
+function printMyName() {
+  console.log("Kelly");
+}
+console.log("Start");
+setTimeout(printMyName, 2000);
+
+// setTimeout - викликає Callback функцію через заданий проміжок часу
+
+//! Правила роботи з функціями:
+//* 1. Називати функції виходячи з виконуваних завдань
+//* 2. Одна функція повинна виконувати одну задачу
+//* 3. Не рекомендується змінювати зовнішні відносно функції змінні
