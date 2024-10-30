@@ -133,11 +133,11 @@
 // }
 // fnWithCallback(anotherFunction);
 
-function printMyName() {
-  console.log("Kelly");
-}
-console.log("Start");
-setTimeout(printMyName, 2000);
+// function printMyName() {
+//   console.log("Kelly");
+// }
+// console.log("Start");
+// setTimeout(printMyName, 2000);
 
 // setTimeout - викликає Callback функцію через заданий проміжок часу
 
