@@ -74,11 +74,11 @@
 
 // Для того щоб запобігти таким помилкам використовується "Глобальний режим"
 //! Глобальний режим('use strict')
-"use strict"; // - ця стрічка повинна бути першою в глобальній області видимості або в області видимості функції;
-function myFun() {
-  a = true; // Uncaught ReferenceError: a is not defined at myFun
-  console.log(a);
-}
+// "use strict"; // - ця стрічка повинна бути першою в глобальній області видимості або в області видимості функції;
+// function myFun() {
+//   a = true; // Uncaught ReferenceError: a is not defined at myFun
+//   console.log(a);
+// }
 // Забороняє використання неоголошених змінних
-myFun();
-console.log(a);
+// myFun();
+// console.log(a);
