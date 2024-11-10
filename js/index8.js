@@ -217,7 +217,40 @@
 // let c;
 // c && console.log("Виконано!"); // undefined
 
-//! Ланцюжок операторів && та ||
+//* Ланцюжок операторів && та ||
 
-// a && b && c && d;
-// a || b || c || d;
+// a && b && c && d; // оператор && - знаходить перше "false" значення
+// a || b || c || d; // оператор || - знаходить перше "true" значення
+
+//! Оператор розділення об'єкта на властивості(...) - "spread"
+
+// const button = {
+//   width: 100,
+//   text: "Buy now",
+// };
+
+// const greenButton = {
+//   ...button,
+//   color: "green",
+// };
+
+// console.table(greenButton);
+
+//* Об'єднання об'єктів за допомогою "..."
+
+const buttonInfo = {
+  text: "Buy",
+};
+
+const buttonStyle = {
+  color: "yellow",
+  width: 200,
+  height: 300,
+};
+
+const button = {
+  ...buttonInfo,
+  ...buttonStyle,
+};
+
+console.table(button);
