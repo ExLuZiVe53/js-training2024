@@ -169,24 +169,28 @@
 //* Приклади з оператором "!"(заперечення)
 //* Оператор ! завжди дає одне із значень(true або false)
 
-!10; //false
-!0; //true
-!"abc"; //false
-!""; //true
-!true; //false
-!undefined; //true
+/*
+    !10; //false
+    !0; //true
+    !"abc"; //false
+    !""; //true
+    !true; //false
+    !undefined; //true
+*/
 
 //* Приклади з оператором "!!"(подвійного заперечення)
 //  Використовується для того щоб легко конвертувати будь-яке значення в булеве
 // Дозволяє перевіряти на хибні значення
 
-!!5; //true
-!!0; //false
-!!"cde"; //true
-!!""; //false
-!!true; // true
-!!undefined; //false
-!!{}; //true
+/*
+    !!5; //true
+    !!0; //false
+    !!"cde"; //true
+    !!""; //false
+    !!true; // true
+    !!undefined; //false
+    !!{}; //true
+*/
 
 //! Оператори і-"&&" та або-"||" є операторами короткого замикання
 
@@ -238,19 +242,19 @@
 
 //* Об'єднання об'єктів за допомогою "..."
 
-const buttonInfo = {
-  text: "Buy",
-};
+// const buttonInfo = {
+//   text: "Buy",
+// };
 
-const buttonStyle = {
-  color: "yellow",
-  width: 200,
-  height: 300,
-};
+// const buttonStyle = {
+//   color: "yellow",
+//   width: 200,
+//   height: 300,
+// };
 
-const button = {
-  ...buttonInfo,
-  ...buttonStyle,
-};
+// const button = {
+//   ...buttonInfo,
+//   ...buttonStyle,
+// };
 
-console.table(button);
+// console.table(button);
