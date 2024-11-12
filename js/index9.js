@@ -113,10 +113,9 @@
 // multiplicationByFactor(4); //8
 
 // ============================================================================
-// const newPost = (post, addedAt = Date()) => ({
-
 //* "({})" - неявне повернення об'єкта пишеться через "()". Бо якщо явно повертати значення потрібно використовувати ключове слово "return"
 
+// const newPost = (post, addedAt = Date()) => ({
 //   ...post,
 //   addedAt,
 // });
@@ -126,4 +125,56 @@
 //   author: "Lesley",
 // };
 
-// newPost(firstPost);
+// console.table(newPost(firstPost));
+// ======================================================================
+//* Явне повернення об'єкта за допомогою "return"
+
+// const onePost = (date, addedDate = Date()) => {
+//   return {
+//     ...date,
+//     addedDate: addedDate,
+//   };
+// };
+
+// const secondPost = {
+//   id: 2,
+//   author: "Bob",
+// };
+
+// console.table(onePost(secondPost));
+
+//! Обробка помилок
+
+//* Що трапляється у випадку помилок
+
+// Виконання коду зупиниться після слова "Uncaught" - не відловлена помилка
+// const fnWithError = () => {
+//   throw new Error("Some error");
+// };
+
+// fnWithError();
+// // uncaught error: "Some error"
+
+// console.log("Continue...");
+// ============================================================================
+
+//! TRY/CATCH - відловлені помилки за допомогою конструкції
+
+// try {
+//   // Виконання блока кода
+// } catch (error) {
+//   // Цей блок виконується у випадку виникнення помилок у блоку "try"
+// }
+
+const fnWithError = () => {
+  throw new Error("Some error");
+};
+
+try {
+  fnWithError();
+} catch (error) {
+  console.error(error);
+  console.log(error.message);
+}
+
+console.log("Continue...");
