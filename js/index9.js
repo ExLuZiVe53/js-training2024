@@ -165,16 +165,17 @@
 // } catch (error) {
 //   // Цей блок виконується у випадку виникнення помилок у блоку "try"
 // }
+// ==========================================================================
 
-const fnWithError = () => {
-  throw new Error("Some error");
-};
+// const fnWithError = () => {
+//   throw new Error("Some error");
+// };
 
-try {
-  fnWithError();
-} catch (error) {
-  console.error(error);
-  console.log(error.message);
-}
+// try {
+//   fnWithError();
+// } catch (error) {
+//   console.error(error);
+//   console.log(error.message);
+// }
 
-console.log("Continue...");
+// console.log("Continue...");
