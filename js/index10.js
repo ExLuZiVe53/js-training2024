@@ -17,13 +17,31 @@
 
 //* Вираз-інструкція(expression-statements)
 
-"abc";
-a = a + 3;
-c = a + b;
-d = "Good" + "Evening";
-myFunction(c, d);
-console.log("Hey");
+// "abc";
+// a = a + 3;
+// c = a + b;
+// d = "Good" + "Evening";
+// myFunction(c, d);
+// console.log("Hey");
 
 //! Крапку з комою(";") можна пропускати
 
 // Вираз може бути інструкцією
+
+//* Вираз може бути використане як аргумент у виклику функції
+
+// function myFn(a) {
+//   console.log(a);
+// }
+
+// const b = true;
+// let c = 10;
+
+// myFn(2 + 3); // 5
+// myFn(b); // true
+// myFn((c = c + 1)); // 11
+// =============================================================
+// Uncaught syntax error: Unexpected token ";"
+
+// myFn((c = c + 1;)
+// myFn(let d)
