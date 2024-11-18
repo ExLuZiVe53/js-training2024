@@ -78,16 +78,46 @@
 
 //! Порівняння масиву та об'єкта
 
-const myObject = {
-  0: 1,
-  1: 2,
-  2: 3,
-  length: 3,
-};
+// const myObject = {
+//   0: 1,
+//   1: 2,
+//   2: 3,
+//   length: 3,
+// };
 
-console.log(myObject); // {0: 1, 1: 2, 2: 3, length: 3}
-console.log(typeof myObject);
+// console.log(myObject); // {0: 1, 1: 2, 2: 3, length: 3}
+//? Вивід у консоль браузера
+/* 
+     {0: 1, 1: 2, 2: 3, Length: 3}
+        0: 1
+        1: 2
+        2: 3
+        length: 3
+            [[Prototype]]: Object <==
+*/
+// console.log(typeof myObject);
+// ==============================================================
 
-const myArray4 = [1, 2, 3];
-console.log(myArray4); // [1, 2, 3]
-console.log(Array.isArray(myArray4));
+// const myArray4 = [1, 2, 3];
+// console.log(myArray4); // [1, 2, 3]
+// ?Вивід у консоль браузера
+/* 
+    (3) [1, 2, 3] i
+        0: 1
+        1: 2
+        2: 3
+        length: 3
+            [[Prototype]]: Array(0) <==
+*/
+
+// console.log(Array.isArray(myArray4));
+// =========================================================
+
+//* Читання значення масиву
+
+// const myArray5 = [2, false, "b"];
+// console.log(myArray5); // [2, false, 'b']
+// console.log(myArray5[0]); // 2
+// console.log(myArray5[1]); // false
+// console.log(myArray5[2]); // b
+// console.log(myArray5.length); // 3
