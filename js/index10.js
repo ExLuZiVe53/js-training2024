@@ -53,14 +53,19 @@
 
 // Формат запису масивів
 
-const myArray = [1, 2, 3];
-console.log(myArray); // [1, 2, 3]
+// const myArray = [1, 2, 3];
+// console.log(myArray); // [1, 2, 3]
 
 // Створення масиву за допомогою створення екземпляру класу "Array" методом "new"
-const myArray1 = new Array(4, 5, 6);
-console.log(myArray1);
+// const myArray1 = new Array(4, 5, 6);
+// console.log(myArray1);
 
-//* Структура масиву
+// Копіювання масиву по посиланню
+
+// const myArray2 = myArray;
+// console.log(myArray2 === myArray);
+
+//? Структура масиву
 
 /* 
     (3) [1, 2, 3] i
@@ -70,3 +75,49 @@ console.log(myArray1);
         length: 3
             __proto__: Array(0)
 */
+
+//! Порівняння масиву та об'єкта
+
+// const myObject = {
+//   0: 1,
+//   1: 2,
+//   2: 3,
+//   length: 3,
+// };
+
+// console.log(myObject); // {0: 1, 1: 2, 2: 3, length: 3}
+//? Вивід у консоль браузера
+/* 
+     {0: 1, 1: 2, 2: 3, Length: 3}
+        0: 1
+        1: 2
+        2: 3
+        length: 3
+            [[Prototype]]: Object <==
+*/
+// console.log(typeof myObject);
+// ==============================================================
+
+// const myArray4 = [1, 2, 3];
+// console.log(myArray4); // [1, 2, 3]
+// ?Вивід у консоль браузера
+/* 
+    (3) [1, 2, 3] i
+        0: 1
+        1: 2
+        2: 3
+        length: 3
+            [[Prototype]]: Array(0) <==
+*/
+
+// console.log(Array.isArray(myArray4));
+// =========================================================
+
+//* Читання значення масиву
+
+// const myArray5 = [2, false, "b"];
+// console.log(myArray5); // [2, false, 'b']
+// console.log(myArray5[0]); // 2
+// console.log(myArray5[1]); // false
+// console.log(myArray5[2]); // b
+// console.log(myArray5.length); // 3
