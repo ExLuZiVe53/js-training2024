@@ -121,3 +121,18 @@
 // console.log(myArray5[1]); // false
 // console.log(myArray5[2]); // b
 // console.log(myArray5.length); // 3
+
+//! Довжина масиву
+
+const myArray6 = [7, 8, 9, 10];
+console.log(myArray6); // [7, 8, 9, 10]
+console.log(myArray6.length); // 4
+
+myArray6[2] = "cde";
+
+console.log(myArray6); // [7, 8, 'cde', 10]
+console.log(myArray6[2]); // 'cde'
+
+myArray6[4] = false;
+console.log(myArray6); // [7, 8, 'cde', 10, false];
+console.log(myArray6.length); // 5
