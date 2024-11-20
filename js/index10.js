@@ -124,15 +124,111 @@
 
 //! Довжина масиву
 
-const myArray6 = [7, 8, 9, 10];
-console.log(myArray6); // [7, 8, 9, 10]
-console.log(myArray6.length); // 4
+// const myArray6 = [7, 8, 9, 10];
+// console.log(myArray6); // [7, 8, 9, 10]
+// console.log(myArray6.length); // 4
 
-myArray6[2] = "cde";
+// myArray6[2] = "cde";
 
-console.log(myArray6); // [7, 8, 'cde', 10]
-console.log(myArray6[2]); // 'cde'
+// console.log(myArray6); // [7, 8, 'cde', 10]
+// console.log(myArray6[2]); // 'cde'
 
-myArray6[4] = false;
-console.log(myArray6); // [7, 8, 'cde', 10, false];
-console.log(myArray6.length); // 5
+// myArray6[4] = false;
+// console.log(myArray6); // [7, 8, 'cde', 10, false];
+// console.log(myArray6.length); // 5
+
+//! Методи масивів:
+
+//* push
+//* pop
+//* shift
+//* unshift
+//* forEach
+//* map
+//* reduce
+//* filter
+//* soft
+
+//! Функції вищого порядку в масивах, або методи прототипів
+
+//? Кожний масив який ви створюєте являється екземпляром масиву
+
+// const myArray7 = [11, 12, 13];
+// console.log(myArray7); // [11, 12, 13]
+/* 
+    (3) [11, 12, 13] i
+        0: 11
+        1: 12
+        2: 13
+        length: 3
+            [[Prototype]]: Array(0) <==
+                => at: f at()
+                => concat: f concat()
+                => constructor: f Array()
+                => copyWithin: f copyWithin()
+                => entries: f entries()
+                => every: f every()
+                => fill: f fill()
+                => filter: f filter()
+                => find: f find()
+                => findIndex: f findIndex()
+                => findLast: f findLast()
+                => findLastIndex: f findLastIndex()
+                => flat: f flat()
+                => flatMap: f flatMap()
+                => forEach: f forEach()
+                => includes: f includes()
+                => indexOf: f indexOf()
+                => join: f join()
+                => keys: f keys()
+                => lastIndexOf: f lastIndexOf()
+                    length: 0
+                => map: f map()
+                => pop: f pop()
+                => push: f push()
+                => reduce: f reduce()
+                => reduceRight: f reduceRight()
+                => reverse: f reverse()
+                => shift: f shift()
+                => slice: f slice()
+                => some: f some()
+                => sort: f sort()
+                => splice: f splice()
+                => toLocaleString; f toLocaleString()
+                => toReversed: f toReversed()
+                => toSorted: f toSorted()
+                => toSpliced: f toSpliced()
+                => toString: f toString()
+                => unShift: f unShift()
+                => values: f values()
+                => with: f with()
+
+                => Symbol(Symbol.iterator); f values()
+                => Symbol(Symbol.unscopables): 
+                {
+                    at: true, 
+                    copyWithin: true, 
+                    entries: true, 
+                    fill: true, 
+                    find: true, 
+                    findIndex: true, 
+                    findLast: true, 
+                    findLastIndex: true, 
+                    flat: true, 
+                    flatMap: true, 
+                    includes: true, 
+                    keys: true, 
+                    toReversed: true,
+                    toSorted: true,
+                    toSpliced: true,
+                    values: true,
+                }
+*/
+
+//* Метод push
+
+// myArray7.push(14);
+// console.log(myArray7); // [11, 12, 13, 14]
+
+// myArray7.push(true);
+// console.log(myArray7); // [11, 12, 13, 14, true]
