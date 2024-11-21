@@ -153,6 +153,8 @@
 
 //? Кожний масив який ви створюєте являється екземпляром масиву
 
+// ========================================================================
+
 // const myArray7 = [11, 12, 13];
 // console.log(myArray7); // [11, 12, 13]
 /* 
@@ -225,10 +227,50 @@
                 }
 */
 
-//* Метод push
+//* Метод push - додає елемент у кінець масиву
 
 // myArray7.push(14);
 // console.log(myArray7); // [11, 12, 13, 14]
 
 // myArray7.push(true);
 // console.log(myArray7); // [11, 12, 13, 14, true]
+
+// ======================================================================
+
+//* Метод pop - видаляє елемент з кінця масиву
+
+// const myArray8 = ["a", "b", "c", "d"];
+
+// myArray8.pop();
+// console.log(myArray8); // ['a', 'b', 'c']
+
+// const removedElement = myArray8.pop();
+// console.log(myArray8); // ['a',' b']
+// console.log(removedElement); // 'c'
+
+// =========================================================================
+
+//* Метод unshift - додає елемент на початок масиву
+
+// const myArray9 = ["BMW", "AUDI", "TESLA"];
+// console.log(myArray9); //["BMW", "AUDI", "TESLA"];
+
+// myArray9.unshift(true);
+// console.log(myArray9); // [true ,"BMW", "AUDI", "TESLA"]
+
+// myArray9.unshift(1);
+// console.log(myArray9); // [1 ,true ,"BMW", "AUDI", "TESLA"]
+
+// =========================================================================
+
+//* Метод shift - видаляє елемент з початку масиву
+
+const myArray10 = ["English", "French", "Polish"];
+console.log(myArray10); // ["English", "French", "Polish"]
+
+myArray10.shift();
+console.log(myArray10); // ["French", "Polish"]
+
+const removedShiftEl = myArray10.shift();
+console.log(myArray10); // ["Polish"];
+console.log(removedShiftEl); // "French"
