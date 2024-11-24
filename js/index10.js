@@ -139,10 +139,15 @@
 
 //! Методи масивів:
 
+//? Мутація методів масиву
+
 //* push
 //* pop
 //* shift
 //* unshift
+
+//? Не мутація методів масиву
+
 //* forEach
 //* map
 //* reduce
@@ -265,12 +270,42 @@
 
 //* Метод shift - видаляє елемент з початку масиву
 
-const myArray10 = ["English", "French", "Polish"];
-console.log(myArray10); // ["English", "French", "Polish"]
+// const myArray10 = ["English", "French", "Polish"];
+// console.log(myArray10); // ["English", "French", "Polish"]
 
-myArray10.shift();
-console.log(myArray10); // ["French", "Polish"]
+// myArray10.shift();
+// console.log(myArray10); // ["French", "Polish"]
 
-const removedShiftEl = myArray10.shift();
-console.log(myArray10); // ["Polish"];
-console.log(removedShiftEl); // "French"
+// const removedShiftEl = myArray10.shift();
+// console.log(myArray10); // ["Polish"];
+// console.log(removedShiftEl); // "French"
+
+// =========================================================================
+
+//* Метод forEach - перебирає масив але нічого не повертає
+
+// const myArray11 = [5, 10, 15];
+// console.log(myArray11);
+
+// const noMutArray = myArray11.forEach((el) => console.log(el * 3));
+// console.log(noMutArray); // undefined
+// console.log(myArray11);
+
+// ======================FOR==========================================
+
+// const items = ["item1", "item2", "item3"];
+// const copyItems = [];
+
+// for (let i = 0; i < items.length; i += 1) {
+//   copyItems.push(items[i]);
+// }
+// console.log(copyItems); // ["item1", "item2", "item3"]
+
+// ======================FOREACH==========================================
+
+// items.forEach((item) => {
+//   copyItems.push(item);
+// });
+// console.log(copyItems); // ["item1", "item2", "item3"]
+
+// Оригінальний масив незмінний, тому якщо присвоїмо результат методу "forEach" отримаємо "undefined"
