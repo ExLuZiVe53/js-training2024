@@ -145,6 +145,7 @@
 //* pop
 //* shift
 //* unshift
+//* soft
 
 //? Не мутація методів масиву
 
@@ -152,7 +153,6 @@
 //* map
 //* reduce
 //* filter
-//* soft
 
 //! Функції вищого порядку в масивах, або методи прототипів
 
@@ -312,10 +312,30 @@
 
 // ======================MAP=================================================
 
+// ======================Variant 1==========================================
 // const myArray12 = [3, 6, 9, 12];
 // console.log(myArray12); // [3, 6, 9, 12]
 
-// // Використаємо неявне повернення без ключового слова "return"
+//? Використаємо неявне повернення без ключового слова "return"
+
 // const newArray = myArray12.map((element) => element * 6);
 // console.log(newArray); // [18, 36, 54, 72]
+
+// ======================Variant 2==========================================
+// const newArray1 = myArray12.map((element) => {
+//   element * 6;
+// });
+// console.log(newArray1); // [undefined, undefined, undefined, undefined]
+
+//? без ключового слова "return", та з використанням фігурних дужок "{}"
+
+// ======================Variant 3==========================================
+// const newArray2 = myArray12.map(function (element) {
+//   return element * 5;
+// });
+
+// console.log(newArray2);
+
+//? з використанням "return" та коллбеком функції в якості параметру function(element) { return element * 5;}
+
 // console.log(myArray12); // [3, 6, 9, 12]
