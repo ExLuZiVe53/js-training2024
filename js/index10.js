@@ -330,12 +330,14 @@
 //? без ключового слова "return", та з використанням фігурних дужок "{}"
 
 // ======================Variant 3==========================================
+// Використання анонімного функціонального виразу
+
 // const newArray2 = myArray12.map(function (element) {
 //   return element * 5;
 // });
 
 // console.log(newArray2);
 
-//? з використанням "return" та коллбеком функції в якості параметру function(element) { return element * 5;}
+//? з використанням "return" та "callback" функції в якості параметру function(element) { return element * 5;}
 
 // console.log(myArray12); // [3, 6, 9, 12]
