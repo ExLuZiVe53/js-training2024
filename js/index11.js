@@ -105,6 +105,16 @@
 //     Блок кода, який виконається одноразово, якщо жодна з умов не була правдива
 // }
 
+// const age = 30;
+
+// if (age > 18) {
+//   console.log("Is adult");
+// } else if (age >= 14) {
+//   console.log("Is teenager");
+// } else {
+//   console.log("Is child");
+// }
+
 //* Переважний формат запису "If" з багатьма умовами
 
 // if(Умова 1){
@@ -118,3 +128,35 @@
 // if(Умова 3){
 //     Блок коду, який виконається одноразово, якщо "умова 3" правдива
 // }
+
+// const age = 17;
+
+// if (age >= 18) {
+//   console.log("Is adult");
+// }
+
+// if (age >= 14 && age < 18) {
+//   console.log("Is teenager");
+// }
+
+// if (age < 10) {
+//   console.log("Is child");
+// }
+
+//* Інструкція "If" у функціях
+
+const sumPositiveNumbers = (b, c) => {
+  if (typeof b !== "number" && typeof c !== "number") {
+    return "One of the arguments is not a number";
+  }
+
+  if (b <= 0 || c <= 0) {
+    return "Numbers are not positive";
+  }
+
+  return b + c;
+};
+
+console.log(sumPositiveNumbers("a", true)); //One of the arguments is not a number
+console.log(sumPositiveNumbers(-10, 5)); // Numbers are not positive
+console.log(sumPositiveNumbers(3, 8)); // 11
