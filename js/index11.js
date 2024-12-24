@@ -145,18 +145,20 @@
 
 //* Інструкція "If" у функціях
 
-const sumPositiveNumbers = (b, c) => {
-  if (typeof b !== "number" && typeof c !== "number") {
-    return "One of the arguments is not a number";
-  }
+// const sumPositiveNumbers = (b, c) => {
+//   if (typeof b !== "number" && typeof c !== "number") {
+//     return "One of the arguments is not a number";
+//   }
 
-  if (b <= 0 || c <= 0) {
-    return "Numbers are not positive";
-  }
+//   if (b <= 0 || c <= 0) {
+//     return "Numbers are not positive";
+//   }
 
-  return b + c;
-};
+//   return b + c;
+// };
 
-console.log(sumPositiveNumbers("a", true)); //One of the arguments is not a number
-console.log(sumPositiveNumbers(-10, 5)); // Numbers are not positive
-console.log(sumPositiveNumbers(3, 8)); // 11
+// console.log(sumPositiveNumbers("a", true)); //One of the arguments is not a number
+// console.log(sumPositiveNumbers(-10, 5)); // Numbers are not positive
+// console.log(sumPositiveNumbers(3, 8)); // 11
+
+//! Інструкція "Switch"
