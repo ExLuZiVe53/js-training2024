@@ -162,3 +162,14 @@
 // console.log(sumPositiveNumbers(3, 8)); // 11
 
 //! Інструкція "Switch"
+
+// switch (Вираз) {
+//   case A:
+//     // Дія якщо Вираз === A;
+//     break;
+//   case B:
+//     // Лія якщо Вираз === B;
+//     break;
+//   default:
+//   // Дія якщо жоден з кейсів не привівся до "true"
+// }
