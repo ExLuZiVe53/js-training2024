@@ -196,4 +196,25 @@
 
 // Тернарний оператор
 
-//? Умова ? Вираз 1 : Вираз 2
+//* Умова ? Вираз 1 : Вираз 2
+
+// ==================================Example 1===========================
+
+// const value = 21;
+// value ? console.log("Умова вірна") : console.log("Умова невірна");
+
+// ==================================Example 2==========================
+
+// const value2 = 11;
+// const value3 = 21;
+
+// value2 && value3 ? myFunction(value2, value3) : myFunction2();
+
+// ==================================Example 3==========================
+
+// let value4 = 11;
+// console.log(value4 >= 0 ? value4 : -value4); // 11
+
+// let value5 = -5;
+// const res = value5 >= 0 ? value5 : -value5;
+// console.log(res); //5
