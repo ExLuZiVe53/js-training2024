@@ -155,11 +155,11 @@
 // Object.keys - метод для витягнення ключів з об'єкта у вигляді масиву
 // Object.values - метод для витягнення властивостей з об'єкта у вигляді масиву
 
-const myObjFor = {
-  x: "lamborghini",
-  y: 100,
-  z: true,
-};
+// const myObjFor = {
+//   x: "lamborghini",
+//   y: 100,
+//   z: true,
+// };
 
 // Object.keys(myObjFor).forEach((key) => {
 //   console.log(key, myObjFor[key]);
@@ -168,3 +168,59 @@ const myObjFor = {
 // Object.values(myObjFor).forEach((value) => {
 //   console.log(value);
 // });
+
+//! "For...in" цикл для масивів================================================
+
+// const myArr = [false, "def", null, 40];
+
+// for (const key in myArr) {
+//   console.log(myArr[key]);
+// }
+
+// Такий перебір не рекомендується використовувати, адже у масивів є рідний метод "forEach"
+
+//! Цмкл "For...of"(ES6)======================================================
+
+// for (const Element of Iterable) {
+//   // Дії з вибраним елементом
+// }
+
+//* ===============Example 1=================================================
+
+// const str = "Happy New Year";
+
+// for (const letter of str) {
+//   // Цикл виконається 14 разів, бо стільки символів у стрічці
+//   console.log(letter);
+// }
+
+//* ==============Example 2==================================================
+
+// const arr = ["Warsaw", 10, true, undefined];
+
+// for (const key of arr) {
+//   console.log(key);
+// }
+
+// =========================================================================
+
+// const arr2 = ["I'm", "superman", true];
+
+// arr2.forEach((element, idx) => console.log(element));
+
+//! for...of не перебирає об'єкти
+
+// const myNameObj = {
+//   height: 180,
+//   years: 35,
+// };
+
+// for (const key of myNameObj) {
+//   console.log(key);
+
+//   // Uncaught TypeError: myNameObj is not iterable at index12.js:218:19
+
+//   // index12.js:218:19 - файл index12.js
+//   // index12.js:218:19 - 218 рядок
+//   // index12.js:218:19 - 19-й символ викликав помилку
+// }
