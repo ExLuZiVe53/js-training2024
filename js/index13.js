@@ -19,14 +19,16 @@
 // ============================================================================
 //? moduleOne.js
 
-const myFirstName = () => {
-  console.log("Bil");
-};
+// const myFirstName = () => {
+//   console.log("Bil");
+// };
 
-export default myFirstName;
+// export default myFirstName;
 // ===========================================================================
 //? moduleTwo.js
 
-import printMyName from "./moduleOne.js";
-printMyName(); // Bil;
+// import printMyName from "./moduleOne.js";
+// printMyName(); // Bil;
 // ===========================================================================
+// Назви змінних можуть буди довільними при дефолтному імпорті
+// Створили через термінал files folder з назвою "modules" та два mjs-файли. Для того щоб не створювати ще "index.htm", назва саме mjs - означає "module js"
