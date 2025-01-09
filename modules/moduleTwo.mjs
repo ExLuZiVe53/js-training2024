@@ -25,3 +25,12 @@
 // console.log(fourRenamed);
 
 // ==================================================
+
+//* Example 4(many imports with module)
+
+// import { sum, multi as multiplication } from "./moduleOne.mjs";
+
+// console.log(sum(2, 5));
+// console.log(multiplication(4, 7));
+
+// ==================================================
