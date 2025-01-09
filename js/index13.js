@@ -79,3 +79,23 @@
 // 2) Розміщуйте усі "export" інструкції внизу файлу
 // 3) Всі інструкції "import" розташовуйте вгорі файлу
 // 4) По можливості використовуйте "export default"
+
+// ===========================================================
+
+//* Example 4(many exports with module)
+
+// const sum = (j, k) => j + k;
+// const multi = (j, k) => j * k;
+
+// export { sum, multi };
+
+// ===========================================================
+
+// //* Example 4(many imports with module)
+
+// import { sum, multi as multiplication } from "./moduleOne.mjs";
+
+// console.log(sum(2, 5));
+// console.log(multiplication(4, 7));
+
+// ===========================================================

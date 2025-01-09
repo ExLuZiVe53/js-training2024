@@ -23,3 +23,12 @@
 // export { three, four };
 
 // ===========================================================
+
+//* Example 4(many exports with module)
+
+// const sum = (j, k) => j + k;
+// const multi = (j, k) => j * k;
+
+// export { sum, multi };
+
+// ===========================================================
