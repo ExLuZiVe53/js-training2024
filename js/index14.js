@@ -72,3 +72,8 @@
 // console.log(firstComment instanceof Object); //true
 
 //! Перевірити чи дана властивість є власною чи наслідуваною можливо за допомогою методу "hasOwnProperty"
+
+// firstComment.hasOwnProperty("text"); // true
+// firstComment.hasOwnProperty("votesQty"); // true
+// firstComment.hasOwnProperty("upvote"); // false
+// firstComment.hasOwnProperty("hasOwnProperty"); // false
