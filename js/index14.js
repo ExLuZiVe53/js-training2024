@@ -24,8 +24,21 @@
 //   }
 // }
 
+//! Створення кілька екземплярів класу
+
 // const firstComment = new Comment("First comment");
+// firstComment.upvote();
+// const secondComment = new Comment("Second comment");
+// secondComment.upvote();
+// secondComment.upvote();
+// const thirdComment = new Comment("Third comment");
+// thirdComment.upvote();
+// thirdComment.upvote();
+// thirdComment.upvote();
+
 // console.log(firstComment);
+// console.log(secondComment);
+// console.log(thirdComment);
 
 //* Виклик методів
 
