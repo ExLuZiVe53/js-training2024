@@ -90,3 +90,20 @@
 // firstComment.hasOwnProperty("votesQty"); // true
 // firstComment.hasOwnProperty("upvote"); // false
 // firstComment.hasOwnProperty("hasOwnProperty"); // false
+
+//! Статичні методи
+
+// class User {
+//   static mergeUser(ork, elf) {
+//     return `${ork} ${elf}`;
+//   }
+//   constructor(player) {
+//     this.player = player;
+//     this.skills = { ATTACK: "attack", HEALTH: "health" };
+//   }
+//   upSkills() {
+//     this.skills = this.skills + skills.ATTACK;
+//   }
+// }
+
+// console.log(User.mergeUser("Mermaid.", "WhiteBear"));
