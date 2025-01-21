@@ -107,3 +107,39 @@
 // }
 
 // console.log(User.mergeUser("Mermaid.", "WhiteBear"));
+
+// ===========================================================================
+// (index):52 Live reload enabled.
+// class User {
+//    static mergeUser(ork, elf) {
+//     return `${ork} ${elf}`;
+//   }
+//   constructor(player) {
+//     this.player = player;
+//     this.skills = { ATTACK: "attack", HEALTH: "health" };
+//   }
+//   upSkills() {
+//     this.skills = this.skills + skills.ATTACK;
+//   }
+// }
+// undefined
+// User
+// class User {
+//    static mergeUser(ork, elf) {
+//     return `${ork} ${elf}`;
+//   }
+//   constructor(player) {
+//     this.player = player;
+//     this.skills = { ATTACK: "attack", HEALTH: "health" };
+//   }
+//   upSkills() {
+//  …
+// console.dir(User)
+// VM292:1 class Userlength: 1mergeUser: ƒ mergeUser(ork, elf)name: "User"prototype: {upSkills: ƒ}arguments: (...)caller: (...)[[FunctionLocation]]: VM124:5[[Prototype]]: ƒ ()[[Scopes]]: Scopes[2]
+// undefined
+// User.prototype
+// {upSkills: ƒ}constructor: class Userlength: 1mergeUser: ƒ mergeUser(ork, elf)name: "User"prototype: {upSkills: ƒ}arguments: (...)caller: (...)[[FunctionLocation]]: VM124:5[[Prototype]]: ƒ ()[[Scopes]]: Scopes[2]upSkills: ƒ upSkills()length: 0name: "upSkills"arguments: (...)caller: (...)[[FunctionLocation]]: VM124:9[[Prototype]]: ƒ ()[[Scopes]]: Scopes[2][[Prototype]]: Object
+// const newUser = new User("Awesome user")
+// undefined
+// newUser
+// User {player: 'Awesome user', skills: {…}}player: "Awesome user"skills: {ATTACK: 'attack', HEALTH: 'health'}[[Prototype]]: Objectconstructor: class UserupSkills: ƒ upSkills()[[Prototype]]: Object
