@@ -129,12 +129,12 @@
 // ===========================================================================
 //! Розширення інших класів
 
-class NumbersArray extends Array {
-  sum() {
-    return this.reduce((element, accumulator) => (accumulator += element), 0);
-  }
-}
+// class NumbersArray extends Array {
+//   sum() {
+//     return this.reduce((element, accumulator) => (accumulator += element), 0);
+//   }
+// }
 
-const myArray = new NumbersArray(7, 8, 9);
-console.log(myArray);
-console.log(myArray.sum());
+// const myArray = new NumbersArray(7, 8, 9);
+// console.log(myArray);
+// myArray.sum();
