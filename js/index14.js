@@ -138,3 +138,17 @@
 // const myArray = new NumbersArray(7, 8, 9);
 // console.log(myArray);
 // myArray.sum();
+
+//* Ланцюжок прототипів
+
+// myArray   =>   NumbersArray   =>    Array   =>    Object
+
+//! __proto__ - прихована властивість, тому і такий синтаксис
+
+//! Строки та числа в js ведуть себе як об'єкти
+
+// const myName = "Bil"; // undefined
+// myName; // 'Bil' string
+// myName.toUpperCase(); // 'BIL'
+// const mySecondName = new String("Book"); // undefined
+// mySecondName; // String{"Book"};
