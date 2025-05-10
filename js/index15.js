@@ -63,6 +63,27 @@
 //   });
 // };
 
-// getData("https://jsonplaceholder.typicode.com/users/")
+// getData("https://jsonplaceholder.typicode.com/todos/3/")
 //   .then((data) => console.log(data))
 //   .catch((error) => console.log(error.message));
+
+//! ASYNC/AWAIT - це спеціальний синтаксис для спрощення роботи з promise
+
+//? Асинхронна функція
+
+// async function asyncFn() {
+//   // Завжди повертає promise
+// }
+
+// const asyncFn = async () => {
+//   // Завжди повертає promise
+// };
+
+// ============================================================================
+//* Приклад 1
+
+// const asyncFn = async () => {
+//   return "Success!";
+// };
+
+// console.log(asyncFn());
