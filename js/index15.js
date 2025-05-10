@@ -69,7 +69,7 @@
 
 //! ASYNC/AWAIT - це спеціальний синтаксис для спрощення роботи з promise
 
-//? Асинхронна функція
+//? Асинхронна функція ASYNC
 
 // async function asyncFn() {
 //   // Завжди повертає promise
@@ -87,3 +87,80 @@
 // };
 
 // console.log(asyncFn());
+
+//* Приклад 1(Продовження)
+
+// const asyncFunction = async () => {
+//   return "Success!";
+// };
+
+// asyncFunction().then((value) => console.log(value));
+
+//* Приклад 2
+
+// const asyncFunction = async () => {
+//   throw new Error("There was an error!");
+// };
+
+// console.log(asyncFunction());
+
+//* Приклад 2(Продовження)
+
+// const asyncFunction = async () => {
+//   throw new Error("There was an error!");
+// };
+
+// asyncFunction()
+//   .then((value) => console.log(value))
+//   .catch((error) => console.log(error.message));
+
+//? Асинхронна функція ASYNC/AWAIT
+
+// const asyncFn = async () => {
+//   await <Promise>;
+// };
+
+// asyncFn();
+
+//* Приклад 3(Очікування результату Await)
+
+// const timerPromise = () =>
+//   new Promise((resolve, reject) => setTimeout(() => resolve(), 2000));
+
+// const asyncFn = async () => {
+//   console.log("Timer starts");
+//   await timerPromise();
+//   console.log("Timer ended");
+// };
+
+// asyncFn();
+
+//* Приклад 3(Продовження)
+
+// const timerPromise = () =>
+//   new Promise((resolve, reject) => setTimeout(() => resolve(), 2000));
+
+// const asyncFn = async () => {
+//   console.log("Timer starts");
+//   const startTime = performance.now(); // метод performance.now() - запускає відлік часу
+//   await timerPromise();
+//   const endTime = performance.now();
+//   console.log("Timer ended", (endTime - startTime).toFixed());
+// };
+
+// asyncFn();
+
+//* Перехід з promise на Async/Await
+
+const getData = (url) => {
+  return new Promise((resolve, reject) => {
+    fetch(url)
+      .then((response) => response.json())
+      .then((json) => resolve(json))
+      .catch((error) => reject(error));
+  });
+};
+
+getData("https://jsonplaceholder.typicode.com/todos/")
+  .then((data) => console.log(data))
+  .catch((error) => console.log(error.message));
