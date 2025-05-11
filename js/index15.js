@@ -152,15 +152,24 @@
 
 //* Перехід з promise на Async/Await
 
-const getData = (url) => {
-  return new Promise((resolve, reject) => {
-    fetch(url)
-      .then((response) => response.json())
-      .then((json) => resolve(json))
-      .catch((error) => reject(error));
-  });
-};
+// const getData = async (url) => {
+//   const res = await fetch(url);
+//   const json = await res.json();
+//   return json;
+// };
 
-getData("https://jsonplaceholder.typicode.com/todos/")
-  .then((data) => console.log(data))
-  .catch((error) => console.log(error.message));
+// const url = "https://jsonplaceholder.typicode.com/todos/";
+
+// try {
+//   const data = await getData(url);
+//   console.log(data);
+// } catch (error) {
+//   console.log(error.message);
+// }
+
+//! Головне в async/await
+
+//* 1. Async/await - це синтаксичне налаштування над promise
+//* 2. Await синтаксис можливий тільки всередині "async" функцій
+//* 3. Async функція завжди повертає "Promise"
+//* 4. Async функція очікує результат інструкції "await" та не виконує наступні інструкції доки результат не знайде
